@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(252, 252, 252);
+
+}
+.menu{
+    border: none; 
+    position: relative;
+    background-color: transparent;
+    color: rgb(3, 1, 1);
+    z-index: 1;
+    margin: 45px 30px;
+}
+
+.close::after{
+  content: "\002716";
+  transition: all 0.5s ease-in-out;
+  }
+.close{
+  transform: translate(-20px , -30px);
+  transition: all 0.5s ease-in-out;
+  font-size: 25px;
+  color: gray;
+  }
+  .open::after{
+    content: "\0030A0";
+    transition: all 0.5s ease-in-out;
+    font-size: 35px;
+  }
+.sidebar{
+   position: fixed;
+   top:0%;
+   background-color: darkslategrey; 
+   width: 200px;
+   height: 100%;
+   overflow: hidden;
+   text-align: center;
+   opacity: 0;
+   transition: all 0.25s ease-in;
+}
+p{
+  color: darkgrey;
+  font-size: 30px;
+  margin-top: 50px;
+}
+.scale{
+   opacity: 1;
+}
